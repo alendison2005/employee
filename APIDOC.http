@@ -1,0 +1,41 @@
+#api call for listing employee
+###
+GET http://127.0.0.1:8000/employee/
+Accept: application/json
+
+###api for creating
+POST http://127.0.0.1:8000/employee/
+Content-Type: application/json
+
+
+{
+
+    "name":"hari",
+    "email":"hari@gamil.com",
+    "Phone":"4567389",
+    "department":"hr",
+    "location":"kakkanad"
+}
+
+details
+###
+GET http://127.0.0.1:8000/employee/1/
+
+
+#update
+###
+PUT  http://127.0.0.1:8000/employee/1/
+Content-Type: application/json
+
+{
+
+    "name":"hari",
+    "email":"hari@gamil.com",
+    "Phone":"0000011",
+    "department":"hr",
+    "location":"kakkanad"
+}
+
+#api for delete
+###
+DELETE http://127.0.0.1:8000/employee/1/
